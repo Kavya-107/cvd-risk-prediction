@@ -4,11 +4,11 @@
 
 ## Overview
 
-Cardiovascular Disease (CVD) is one of the leading causes of mortality worldwide. Early prediction of cardiovascular disease risk can help healthcare professionals provide timely intervention and improve patient outcomes.
+Cardiovascular Disease (CVD) remains one of the leading causes of mortality worldwide, making early risk prediction essential for timely clinical intervention and preventive healthcare. Although numerous machine learning and deep learning models have been developed for CVD risk prediction, many existing approaches primarily focus on improving prediction accuracy while overlooking model interpretability, feature representation, and generalization to unseen datasets.
 
-This project aims to develop an explainable deep learning framework for cardiovascular disease risk prediction by enhancing the existing Feature Decomposition-based Deep Learning (FDDL) architecture. The proposed framework plans to replace the conventional Fully Connected (FC) classifier with a Meta Multi-Layer Perceptron (Meta MLP) to improve nonlinear decision making.
+The existing Feature Decomposition-based Deep Learning (FDDL) model effectively learns decomposed feature representations using an attention mechanism. However, its final prediction relies on a single Fully Connected (FC) layer, which may not fully capture complex nonlinear interactions among the extracted features. Furthermore, the model does not incorporate clinically meaningful feature engineering, systematic hyperparameter optimization, actionable explainability, or comprehensive external validation.
 
-The project will also integrate clinical feature engineering, hyperparameter optimization, explainable artificial intelligence, and external validation to improve model reliability and interpretability.
+To address these limitations, this project proposes an enhanced FDDL framework that integrates clinical feature engineering, replaces the conventional FC classifier with a Meta Multi-Layer Perceptron (Meta MLP), optimizes model performance using Optuna, explains predictions using SHAP, generates actionable Counterfactual Explanations, and validates the model using an external dataset. The proposed framework aims to provide a more accurate, interpretable, and clinically reliable cardiovascular disease risk prediction system.
 
 ---
 
